@@ -5,41 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <title>SiteWidget</title>
 </head>
 <body>
     <header>
-        <h2>Welcome</h2>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-xxl">
+              <a class="navbar-brand">RSS SiteWidget</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Поиск темы RSS" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+              </form>
+            </div>
+          </nav>
     </header>
 
-<div id="body">
+    
+    <section>
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-4">
+                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&mode=html&showonly=&maxitems=10&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=10&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmeduza.io%2Frss2%2Fall&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                </div>
+            </div>
+        </div>
+    
+    </section>
 
-</div>
-    <div class="main">
-        <ul>
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-            <li><a href="#">Five</a></li>
-            <li><a href="#">Six</a></li>
-        </ul>
-        
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=10&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
-                
-
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+    
+    </div>
 
 
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Ftvrain.ru%2Fexport%2Frss%2Fall.xml&mode=html&showonly=&maxitems=6&showdescs=0&desctrim=20&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
-
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Ftvrain.ru%2Fexport%2Frss%2Fall.xml&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
-
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Ftvrain.ru%2Fexport%2Frss%2Fall.xml&mode=html&showonly=&maxitems=8&showdescs=0&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
-
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fwww.bnkomi.ru%2Fnews%2Fnews%2Findex%2Ffeed%2Frss2&mode=html&showonly=&maxitems=8&showdescs=0&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
-
-        <iframe width="250" height="750" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmeduza.io%2Frss2%2Fall&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
 
 
         
@@ -51,6 +55,6 @@
         
 
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
