@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-xxl">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
               <a class="navbar-brand">RSS SiteWidget</a>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Поиск темы RSS" aria-label="Search">
@@ -21,38 +21,91 @@
             </div>
           </nav>
     </header>
-
-    
     <section>
-        <div class="container-xxl">
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  NASA
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <iframe width="100%" height="450" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&mode=html&showonly=&maxitems=12&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_self&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Lenta
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <iframe width="100%" height="450" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=12&showdescs=1&desctrim=10&descmax=10&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Медуза
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <iframe width="100%" height="450" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmeduza.io%2Frss2%2Fall&mode=html&showonly=&maxitems=12&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFive">
+                    EuroTopics
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <iframe width="100%" height="450" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fwww.eurotopics.net%2Fexport%2Fen%2Frss.xml&mode=html&showonly=&maxitems=12&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Телеканал ДОЖДЬ
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <iframe width="100%" height="450" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Ftvrain.ru%2Fexport%2Frss%2Fall.xml&mode=html&showonly=&maxitems=12&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&fullhtml=1&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+<!--
+    <section>
+        <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&mode=html&showonly=&maxitems=10&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                <div class="col">
+                    <iframe class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&mode=html&showonly=&maxitems=10&showdescs=1&desctrim=15&descmax=0&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
                 </div>
-                <div class="col-4">
-                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=10&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                <div class="col">
+                    <iframe class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Flenta.ru%2Frss%2Fnews&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=10&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
                 </div>
-                <div class="col-4">
-                    <iframe width="300" height="400" class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmeduza.io%2Frss2%2Fall&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
+                <div class="col">
+                    <iframe class="rssdog" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fmeduza.io%2Frss2%2Fall&mode=html&showonly=&maxitems=8&showdescs=1&desctrim=10&descmax=20&tabwidth=100%25&showdate=1&utf8=1&linktarget=_blank&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>
                 </div>
             </div>
         </div>
     
     </section>
-
+-->
     
-    </div>
-
-
-
-
-        
-
-
-
-        
-
-        
+     
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
